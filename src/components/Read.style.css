@@ -1,0 +1,128 @@
+/* Styles for the card */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  background-color: #fff;
+  flex: 1 1 22%; /* Adjust flex-basis to control card width */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.card-subtitle {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.card-text {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.card-link {
+  font-size: 0.8em;
+  margin-right: 8px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+  margin-top: 20px;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(102px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #34974d;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button:active {
+  border: 1px solid #2e8644;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* Make the card take full width on smaller screens */
+    margin: 10px 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
