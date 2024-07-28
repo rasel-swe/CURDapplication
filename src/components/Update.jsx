@@ -61,7 +61,7 @@ const Update = () => {
 
   return (
     <div className="container2 my-5">
-          <h2 className="text-center">Update The Data</h2>
+      <h2 className="text-center">Update The Data</h2>
       {error && (
         <div className="alert alert-danger" role="alert">
           {error}

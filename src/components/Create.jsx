@@ -32,13 +32,12 @@ const Create = () => {
       setError("Successfully added");
 
       setTimeout(() => {
-        setError("")
+        setError("");
         setName("");
         setEmail("");
         setAge("");
         Navigate("/read");
       }, 1000);
-    
     }
   };
 
